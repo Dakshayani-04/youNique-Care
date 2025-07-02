@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COMBINATION SKIN</title>
+  <link rel="stylesheet" href="./comb.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: linear-gradient(to top, rgb(214, 130, 144), rgb(219, 157, 167));
+      font-family: 'Roboto Serif', serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header {
+      font-size: 2rem;
+      color: white;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .intro {
+      color: white;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 40px;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      max-width: 1000px;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+
+    .nav-card {
+      text-align: center;
+      flex: 1 1 200px;
+      margin: 10px;
+    }
+
+    .nav-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .nav-card img {
+      height: 150px;
+      width: 150px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .nav-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-card h3 {
+      margin-top: 10px;
+      color: white;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="head">-: Skincare &amp; Diet for Combination Skin :-</header>
+
+  <p class="intro">
+    Based on your combination skin type, we have suggested four key categories: Skincare, Ingredients, Diet, and Products. Click on any image below to explore personalized guidance tailored for your skin's unique needs.
+  </p>
+
+  <div class="nav-container">
+    <div class="nav-card">
+      <a href="c_skincare.html">
+        <img src="https://www.herbaldynamicsbeauty.com/cdn/shop/articles/daily_guide_to_better_skincare_2000x.jpg?v=1624918418" alt="Skincare">
+        <h3>Skincare</h3>
+      </a>
+    </div>
+    <div class="nav-card">
+      <a href="c_ingredients.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDJhzXf3T5f_111NhWU94HubyN5VwfTV48YQ&s" alt="Ingredients">
+        <h3>Ingredients</h3>
+      </a>
+    </div>
+    <div class="nav-card">
+      <a href="productcomb.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJecO6BMCNg74XCuG1dF722RvNDKTQo5ruua-l9b_LMr-mPKApagR2HCMI6QCRlkbSl0Y&usqp=CAU" alt="Products">
+        <h3>Products</h3>
+      </a>
+    </div>
+    <div class="nav-card">
+      <a href="c_diet.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZj5LoU9H1gOmnc34uOgPzMRWZe-BtRJAvGA&s" alt="Diet">
+        <h3>Diet</h3>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

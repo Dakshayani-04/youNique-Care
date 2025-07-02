@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overweight BMI Diet & Exercise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #fff8f3, #ffe0e0);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ff7675;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #d63031;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #2d3436;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffeaa7;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    BMI Health Guide: Overweight Suggestions
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Recommended Diet</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="https://atanurrannagharrecipe.com/wp-content/uploads/2022/12/Chicken-Salad-Photo-01.jpg" alt="Salad Bowl">
+          <h3>High Fiber Foods</h3>
+          <p>Include fruits, vegetables, oats, and legumes to keep you full and support digestion.</p>
+        </div>
+        <div class="card">
+          <img src="https://hips.hearstapps.com/hmg-prod/images/recipe/southwestern-grilled-chicken-salad-1457049833.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*" alt="Grilled Chicken">
+          <h3>Lean Proteins</h3>
+          <p>Grilled chicken, tofu, fish, and eggs help build muscle and burn fat.</p>
+        </div>
+        <div class="card">
+          <img src="https://files.kosher.com/Lifestyle/Giotto_Leakproof_Time_Marker.jpg" alt="Water Bottle">
+          <h3>Stay Hydrated</h3>
+          <p>Drink at least 2.5–3 liters of water per day to flush out toxins and aid weight loss.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Suggested Exercises</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtrtFgdBoJHbonppFTZIuZt1jy53aDWp9x7A&s" alt="Walking">
+          <h3>Brisk Walking</h3>
+          <p>Start with 30 mins of walking daily. It’s simple and effective for fat burning.</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQodfedl7VVPOMFAMcKho_1a4RSkUCj-HZP3A&s" alt="Yoga">
+          <h3>Yoga</h3>
+          <p>Reduces stress, improves flexibility and aids in healthy weight loss.</p>
+        </div>
+        <div class="card">
+          <img src="data:image/jpeg;base64,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" alt="Strength Training">
+          <h3>Strength Training</h3>
+          <p>Build lean muscle which increases metabolism and burns more calories.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Designed with ❤ by Team BMI Health 
+  </footer>
+</body>
+</html>

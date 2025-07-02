@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings - youNique care</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fdecef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .settings-container {
+      background-color: white;
+      border-radius: 20px;
+      padding: 40px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #6b336e;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .save-button {
+      margin-top: 30px;
+      background-color: #cc3366;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .save-button:hover {
+      background-color: #a82953;
+    }
+  </style>
+</head>
+<body>
+  <div class="settings-container">
+    <h1>Edit Profile Settings</h1>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="enter name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="email@example.com">
+
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="">Select</option>
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+      </select>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="**">
+
+      <label for="goal">Wellness Goal</label>
+      <input type="text" id="goal">
+
+      <button class="save-button" type="submit">Save Changes</button>
+    </form>
+  </div>
+</body>
+</html>

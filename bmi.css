@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffe6e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 800px;
+  padding: 40px;
+  background: rgb(250,213, 213,0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #1f3b2d;
+  margin-bottom: 20px;
+}
+
+.bmi-link {
+  margin-bottom: 30px;
+}
+
+.bmi-btn {
+  background-color: #1f4c39;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.bmi-btn:hover {
+  background-color: #173b2c;
+}
+
+.bmi-chart img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.btn-style{
+    display:flex;
+    background-color: #173b2c;
+    color:white;
+    padding:15px 30px;
+    border:none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+.btn-style:hover{
+    background-color: #163d2e;
+}

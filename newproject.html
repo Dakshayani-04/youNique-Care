@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>youNique Care - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: #fdeef4;
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+    }
+
+    .main-section {
+      padding: 30px;
+    }
+
+    .top-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .image-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .image-stack img {
+      width: 180px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .main-title {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main-title img {
+      height: 250px;
+      margin-right: 20px;
+    }
+
+    .main-title h1 {
+      font-size: 28px;
+      color: #cc3366;
+      text-align: left;
+      line-height: 1.4;
+    }
+
+    .text-side {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      padding: 0 40px;
+      gap: 20px;
+    }
+
+    .text-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+      width: 45%;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #cc3366;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #fdeef4;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .footer-icons i {
+      margin: 0 10px;
+      font-size: 20px;
+      color: #cc3366;
+    }
+
+    .footer-text {
+      margin-top: 10px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="newlogo.jpg" alt="youNique care logo">
+    <nav>
+      <a href="profilepage.html">Profile</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <div class="main-section">
+
+    <!-- Top image and logo layout -->
+    <div class="top-wrapper">
+      <div class="image-stack">
+        <img src="photo1.jpg" alt="Health Image 1">
+        <img src="photo2.jpg" alt="Health Image 2">
+      </div>
+
+      <div class="main-title">
+        <img src="newlogo.jpg" alt="Logo">
+        <h1>
+          Personalized Nutrition<br>
+          and Skincare Recommendation
+        </h1>
+      </div>
+
+      <div class="image-stack">
+        <img src="photo3jpg.jpg" alt="Skin Image 1">
+        <img src="photo4.jpg" alt="Skin Image 2">
+      </div>
+    </div>
+
+    <!-- Side text cards -->
+    <div class="text-side">
+      <div class="text-card">
+        <p>Our recommendations fuse wellness and glow. You deserve tailored solutions that empower your journey to confidence and well-being inside and out.</p>
+      </div>
+      <div class="text-card">
+        <p>Discover a unique blend of health and beauty. Calculate your BMI for customized nutrition tips, while enjoying skincare advice that reflects your inner vitality.</p>
+      </div>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="cards-container">
+      <div class="card">
+        <img src="nutrition.jpg" alt="BMI Index">
+        <button onclick="location.href='bmi.html'">BMI Index</button>
+      </div>
+      <div class="card">
+        <img src="skincare(2).jpg" alt="Skincare Recommendations">
+        <button onclick="location.href='main.html'">Skincare Recommendations</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="footer-text">
+      <p>&copy; 2025 youNique care. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

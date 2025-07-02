@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Your Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #e6f0ff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 50px 40px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    label {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 6px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #0077cc;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+      transform: scale(1.03);
+    }
+
+    .thank-you {
+      display: none;
+      background-color: #d9f9d9;
+      border: 1px solid #a6e9a6;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 8px;
+      color: #207520;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    footer {
+      background: #e6f0ff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="main.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects1.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Me</h2>
+
+    <form id="contactForm" action="https://formsubmit.co/dakshayani0415@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New message from your portfolio">
+      <input type="hidden" name="_next" value="">
+
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMessage">
+      ✅ Thank you! Your message has been sent successfully.
+    </div>
+  </main>
+
+  <footer>
+    © 2025  All rights reserved.
+  </footer>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const thankYou = document.getElementById("thankYouMessage");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // stop default redirect
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          thankYou.style.display = "block";
+        } else {
+          alert("There was a problem submitting your message. Please try again later.");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

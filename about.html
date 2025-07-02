@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - youNique care</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #f7c6f7, #fbd0d0);
+      height:100svh;
+      display:flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #f5bbe2;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .logo {
+      width: 60px;
+      height: auto;
+      border-radius: 25%;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #aa00aa;
+      font-weight: bold;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: #f3bbd9;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      flex:1;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .text-column {
+      flex: 1;
+    }
+
+    .image-column {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      flex: 1;
+      align-items: flex-end;
+    }
+
+    .image-column img:nth-child(odd) {
+      align-self: flex-start;
+    }
+
+    .image-column img:nth-child(even) {
+      align-self: flex-end;
+    }
+
+    .zigzag-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    h1 {
+      color: #aa00aa;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .slogan {
+      font-style: italic;
+      color: #bb00bb;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .know-more-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff66cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .know-more-button:hover {
+      background-color: #e055b5;
+    }
+    .footer{
+      background-color: #ff66cc;
+      text-align: center;
+      padding:15px 10px;
+      font-size: 14px;
+      color:#444;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="newlogo.jpg" alt="youNique care logo" class="logo" />
+    <nav>
+      <a href="welcome.html">Home</a>
+    </nav>
+  </header>
+
+  <div class="about-container">
+    <div class="about-section">
+      <div class="text-column">
+        <h1>ABOUT US</h1>
+        <p class="slogan">Personalized Wellness, Inside and Out.</p>
+        <p>
+          youNique care is dedicated to blending health and beauty in a unique way. Our mission is to empower individuals to achieve confidence, wellness, and radiant energy through customized products and guidance tailored to their body’s needs.
+        </p>
+        <p>
+          We believe that every person is unique, and their care should be too. With a focus on both internal and external wellness, we source expert-reviewed, customized advice and solutions to help you glow inside and out.
+        </p>
+        <a href="knowmore.html" class="know-more-button">Know More</a>
+      </div>
+      <div class="image-column">
+        <img src="aboutus.jpg" alt="Skincare" class="zigzag-img" />
+        <img src="aboutus2.jpg" alt="Nutrition" class="zigzag-img" />
+      </div>
+    </div>
+  </div>
+<footer>
+  &copy;2025 yoNique Care.All rights reserved
+</footer>
+</body>
+</html>

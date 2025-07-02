@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to youNique Care</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #FFEAEA;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: #FFD6D6;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #C2618C;
+      font-weight: bold;
+    }
+
+    .main-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 5%;
+    }
+
+    .zigzag-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .zigzag-column img {
+      width: 120px;
+      height: 120px;
+      margin: 20px 0;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .zigzag-column img:nth-child(even){
+      margin-left: 50px;
+    }
+    .zigzag-column img:nth-child(odd){
+      margin-right: 50px;
+    }
+    .center-content {
+      text-align: center;
+      padding: 0 40px;
+    }
+
+    .center-content img {
+      height: 500px;
+      margin-bottom: 20px;
+    }
+
+    .center-content h1 {
+      color: #C2618C;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .center-content p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    footer {
+      background-color: #FFD6D6;
+      color: #333;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    .footer-section {
+      margin: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #C2618C;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="newlogo.jpg" alt="youNique Care Logo">
+    <nav>
+      <a href="about.html">About Us</a>
+      <!-- <a href="knowmore.html">Know More</a> -->
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="main-section">
+    <div class="zigzag-column">
+      <img src="image1.jpg" alt="Wellness 1">
+      <img src="image2.jpg" alt="Wellness 2">
+      <img src="image3.jpg" alt="Wellness 3">
+      <img src="image4.jpg" alt="Wellness 4">
+      <img src="image5.jpg" alt="Wellness 5">
+    </div>
+
+    <div class="center-content">
+      <img src="newlogo.jpg" alt="Center Logo">
+      <h1>Welcome to youNique Care</h1>
+      <p>Empowering your personalized wellness journey with care and compassion.</p>
+    </div>
+
+    <div class="zigzag-column">
+      <img src="image6.jpg" alt="Wellness 6">
+      <img src="image7.jpg" alt="Wellness 7">
+      <img src="image8.jpg" alt="Wellness 8">
+      <img src="image9.jpg" alt="Wellness 9">
+      <img src="image10.jpg" alt="Wellness 10">
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-section">
+      <strong>Contact Us</strong><br>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <strong>About Us</strong><br>
+      We are dedicated to your wellness and happiness.
+    </div>
+    <div class="footer-section">
+      &copy; 2025 youNique Care. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

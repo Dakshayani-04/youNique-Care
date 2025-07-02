@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Know More - youNique care</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #e9a3b7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #ecb1c2;
+      color: white;
+    }
+
+    .header .logo {
+      height: 50px;
+    }
+
+    .header .home-link {
+      text-decoration: none;
+      color: #6b336e;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .about-container {
+      background-color: rgb(240, 186, 217);
+      border-radius: 20px;
+      width: 90%;
+      max-width: 1000px;
+      padding: 40px 60px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+
+    .about-left {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    
+
+    .about-left h1 {
+      font-size: 36px;
+      color: #6b336e;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #6b336e;
+      display: inline-block;
+    }
+
+    .about-left p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .about-left .slogan {
+      font-style: italic;
+      color: #cc3366;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .about-right {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .about-right .zigzag-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    .about-right .zigzag-img:first-child {
+      align-self: flex-start;
+    }
+
+    .about-right .zigzag-img:last-child {
+      align-self: flex-end;
+    }
+
+    .footer {
+      width: 100svh;
+      background: #ecaddf;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer .social-icons {
+      margin: 10px 0;
+    }
+
+    .footer .social-icons a {
+      color: white;
+      font-size: 20px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .footer p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .about-right .zigzag-img {
+        width: 200px;
+        height: 200px;
+        align-self: center !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="newlogo.jpg" alt="youNique care logo" class="logo">
+    <nav>
+      <a href="welcome.html" class="home-link">Home</a>
+    </nav> 
+  </header>
+
+  <div class="about-container">
+    <div class="about-left">
+      
+      <h1>KNOW MORE</h1>
+      <p class="slogan">Elevating Wellness from Within</p>
+      <p>
+        At youNique care, we believe wellness is not one-size-fits-all but rather a deeply
+        personal and scientific journey. That’s why we specialize in offering
+        <strong>Customized Wellness Plans</strong> tailored to your specific needs, preferences,
+        and goals.
+      </p>
+      <p>
+        Whether you're dealing with specific concerns or simply seeking to enhance your overall
+        health, our expert team combines the latest research in nutrition and skincare to
+        craft personalized solutions that align with your lifestyle and biology.
+      </p>
+      <p>
+        Join us on a journey toward holistic health and beauty that’s empowered, educated,
+        and designed uniquely for you.
+      </p>
+      <a href="about.html" class="know-more-button">About Us</a>
+    </div>
+
+    <div class="about-right">
+      <img src="aboutus.jpg" alt="Skincare" class="zigzag-img" />
+      <img src="aboutus2.jpg" alt="Nutrition" class="zigzag-img" />
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <p>&copy; 2025 youNique care. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
